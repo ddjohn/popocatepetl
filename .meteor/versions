@@ -28,6 +28,7 @@ ecmascript-runtime-server@0.9.0
 ejson@1.1.1
 es5-shim@4.8.0
 fetch@0.1.1
+fourseven:scss@4.12.0
 geojson-utils@1.0.10
 hot-code-push@1.0.4
 html-tools@1.0.11
@@ -41,7 +42,7 @@ livedata@1.0.18
 logging@1.1.20
 meteor@1.9.3
 meteor-base@1.4.0
-minifier-css@1.5.0
+minifier-css@1.5.1
 minifier-js@2.6.0
 minimongo@1.6.0
 mobile-experience@1.1.0
@@ -53,7 +54,7 @@ mongo@1.10.0
 mongo-decimal@0.1.1
 mongo-dev-server@1.1.0
 mongo-id@1.0.7
-npm-mongo@3.7.0
+npm-mongo@3.7.1
 ordered-dict@1.1.0
 promise@0.11.2
 random@1.2.0
