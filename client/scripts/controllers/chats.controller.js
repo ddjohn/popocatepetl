@@ -8,6 +8,7 @@ export default class ChatsCtrl extends Controller {
 
     constructor() {
         console.log('chats.controller.js','constructor()');
+        
         super(...arguments);
 
         this.helpers({

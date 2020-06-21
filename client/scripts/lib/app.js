@@ -10,21 +10,21 @@ import Angular from 'angular';
 import Loader from 'angular-ecmascript/module-loader';
 import { Meteor } from 'meteor/meteor';
  
-import ChatsCtrl from '../controllers/chats.controller';
-import CalendarFilter from '../filters/calendar.filter';
-import ChatCtrl from '../controllers/chat.controller';
+import ChatCtrl       from '../controllers/chat.controller';
+import ChatsCtrl      from '../controllers/chats.controller';
 import InputDirective from '../directives/input.directive';
-import RoutesConfig from '../routes';
+import CalendarFilter from '../filters/calendar.filter';
+import RoutesConfig   from '../routes';
 
 const App = 'Popocatepetl';
 
 Angular.module(App, ['angular-meteor','angularMoment','ionic']);
 
 new Loader(App)
-    .load(ChatsCtrl)
     .load(ChatCtrl)
-    .load(CalendarFilter)
+    .load(ChatsCtrl)
     .load(InputDirective)
+    .load(CalendarFilter)
     .load(RoutesConfig);
 
 if (Meteor.isCordova) {
@@ -36,5 +36,6 @@ else {
  
 function onReady() {
     console.log('app.js','onReady()')
+
     Angular.bootstrap(document, [App]);
 }

@@ -7,8 +7,8 @@ import { Controller } from 'angular-ecmascript/module-helpers';
 import { Chats, Messages } from '../../../lib/collections';
 import { _ } from 'underscore';
 
-
 export default class ChatCtrl extends Controller {
+    
     constructor() {
         console.log('chat.controller.js', 'constructor');
 

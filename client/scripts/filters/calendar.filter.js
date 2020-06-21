@@ -6,7 +6,10 @@ import { Filter } from 'angular-ecmascript/module-helpers';
 export default class CalendarFilter extends Filter {
 
   filter(time) {
-    if (!time) return;
+    console.log('calendar.filter.js','filter()');
+
+    if (!time) 
+      return;
  
     return Moment(time).calendar(null, {
       lastDay : '[Yesterday]',

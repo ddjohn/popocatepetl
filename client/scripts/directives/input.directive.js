@@ -3,8 +3,10 @@ console.log('input.directive.js','loading...');
 import { Directive } from 'angular-ecmascript/module-helpers';
  
 export default class InputDirective extends Directive {
+
     constructor() {
         console.log('input.directive.js','constructor()');
+
         super(...arguments);
  
         this.restrict = 'E';
